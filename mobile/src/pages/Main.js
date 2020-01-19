@@ -61,8 +61,8 @@ function Main({ navigation }) {
         < MapView onRegionChangeComplete={handleRegionChanged} initialRegion={currentRegion} style={styles.map}>
         {devs.map(dev => (<Marker 
                 key={dev._id}
-                coordinate={{ latitude: dev.location.coordinates[0],
-                longitude: dev.location.coordinates[1]}}>
+                coordinate={{ latitude: dev.location.coordinates[1],
+                longitude: dev.location.coordinates[0]}}>
 
                 <Image style={styles.avatar} source= {{uri: dev.avatar_url}} />
 
